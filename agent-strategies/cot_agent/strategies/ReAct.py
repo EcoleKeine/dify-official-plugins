@@ -110,7 +110,7 @@ class ReActAgentStrategy(AgentStrategy):
             stop.append("Observation")
         # init instruction
         inputs = react_params.inputs
-        instruction = ""
+        instruction = instruction.instruction
         self._instruction = self._fill_in_inputs_from_external_data_tools(
             instruction, inputs
         )
